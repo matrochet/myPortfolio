@@ -1,0 +1,278 @@
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  color: #333;
+  background-color: #f9f9f9;
+  position: relative;
+}
+
+header {
+  background-color: #007bff;
+  color: white;
+  padding: 1rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  padding: 0;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.contact {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: #f4f4f4;
+}
+
+.contact h2 {
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  color: #007bff;
+}
+
+.contact p {
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+  color: #007bff;
+}
+
+.form {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 10px;
+  width: 300px;
+  background-color: white;
+  padding: 20px;
+  margin-top: 50px;
+  border-radius: 10px;
+  box-shadow: 0 30px 30px -30px rgba(27, 26, 26, 0.315);
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form .title {
+  color: royalblue;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: -1px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form input {
+  outline: 0;
+  border: 1px solid rgb(219, 213, 213);
+  padding: 8px 14px;
+  border-radius: 8px;
+  width: 90%;
+  height: 50px;
+}
+
+.form textarea {
+  border-radius: 8px;
+  height: 100px;
+  width: 90%;
+  resize: none;
+  outline: 0;
+  padding: 8px 14px;
+  border: 1px solid rgb(219, 213, 213);
+}
+
+.form button {
+  align-self: flex-end;
+  padding: 8px;
+  outline: 0;
+  border: 0;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: royalblue;
+  color: #fff;
+  cursor: pointer;
+}
+
+.menu-toggle {
+  display: none;
+  background: #007bff;
+  color: white;
+  border: 2px solid white;
+  padding: 10px 20px;
+  margin: 10px 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.logo {
+  width: 45px;
+  height: auto;
+  display: flex;
+  object-fit: contain;
+}
+
+.cv-section {
+  text-align: center;
+  padding: 2rem;
+}
+
+.cv-container {
+  position: relative;
+  display: inline-block;
+}
+
+.cv-image {
+  max-width: 80%;
+  height: auto;
+  border: 2px solid #ccc;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.cv-image:hover {
+  transform: scale(1.05);
+}
+
+@media screen and (max-width: 768px) {
+  .cv-image {
+    max-width: 100%;
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.hero {
+  text-align: center;
+  padding: 1rem 1rem;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: white;
+}
+
+.pres_stage {
+  position: relative;
+  overflow: hidden;
+  height: 50px;
+  background-color: white;
+  padding: 20px;
+}
+
+.pres_stage p {
+  position: absolute;
+  top: 25%;
+  left: 0;
+  transform: translateY(-50%);
+  color: #6a11cb;
+  width: 100%;
+  white-space: nowrap;
+  animation: slide 15s linear infinite;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(25%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.hero2 {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  height: 50px;
+}
+
+.pitch_contact {
+  position: relative;
+  overflow: hidden;
+  height: 50px;
+  background-color: white;
+  padding: 20px;
+}
+
+.pitch_contact p {
+  position: absolute;
+  top: 25%;
+  left: 0;
+  font-size: 20px;
+  transform: translateY(-50%);
+  color: #6a11cb;
+  width: 100%;
+  white-space: nowrap;
+  animation: slide2 15s linear infinite;
+}
+
+@keyframes slide2 {
+  0% {
+    transform: translateX(25%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.pitch_contact2 {
+  position: relative;
+  overflow: hidden;
+  height: 50px;
+  background-color: white;
+  padding: 20px;
+}
+
+.pitch_contact2 p {
+  position: absolute;
+  top: 25%;
+  left: 0;
+  font-size: 20px;
+  transform: translateY(-50%);
+  color: #6a11cb;
+  width: 100%;
+  white-space: nowrap;
+  animation: slide2 15s linear infinite;
+}
+
+.separate-row {
+  width: 100%;
+  height: 2px;
+  background-color: #007bff;
+}
+
+footer {
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}

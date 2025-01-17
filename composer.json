@@ -1,0 +1,8 @@
+{
+    "require": {
+        "symfony/mailer": "^7.2",
+        "symfony/resend-mailer": "^7.2",
+        "resend/resend-php": "^0.15.0",
+        "phpmailer/phpmailer": "^6.9"
+    }
+}
